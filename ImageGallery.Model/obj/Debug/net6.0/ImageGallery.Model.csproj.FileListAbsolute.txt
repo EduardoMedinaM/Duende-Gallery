@@ -1,0 +1,12 @@
+C:\localrepos\Security\duende-security\ImageGallery.Model\bin\Debug\net6.0\ImageGallery.Model.deps.json
+C:\localrepos\Security\duende-security\ImageGallery.Model\bin\Debug\net6.0\ImageGallery.Model.dll
+C:\localrepos\Security\duende-security\ImageGallery.Model\bin\Debug\net6.0\ImageGallery.Model.pdb
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.csproj.AssemblyReference.cache
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.AssemblyInfoInputs.cache
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.AssemblyInfo.cs
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.csproj.CoreCompileInputs.cache
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.dll
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\refint\ImageGallery.Model.dll
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ImageGallery.Model.pdb
+C:\localrepos\Security\duende-security\ImageGallery.Model\obj\Debug\net6.0\ref\ImageGallery.Model.dll
