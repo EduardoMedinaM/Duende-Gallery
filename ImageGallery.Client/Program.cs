@@ -26,7 +26,7 @@ builder.Services
     })
     /* 
      * Cookie based Authentication. It means:
-     * once the identity token is validated and transformed into a cliams identity,
+     * once the identity token is validated and transformed into a claims identity,
      * it will be stored in an encrypted cookie. The cookie is then used
      * on subsequent requests to the web app to check
      */
@@ -41,7 +41,7 @@ builder.Services
     .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
     {
         options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        // Duente.IDP is the Authority
+        // Duende.IDP is the Authority
         options.Authority = "https://localhost:5001";
         // Needs to match the ClientId registered in the Duende.IDP project
         options.ClientId = "imagegalleryclient";
@@ -57,10 +57,19 @@ builder.Services
         options.Scope.Add("profile");
 		// needs to be defined here since it's part of the validation. Default: signin-oidc
 		options.CallbackPath = new PathString("/signin-oidc");
-		/* to later
+        /* to later
          * var identityToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
+         * 
+         * options.CallbackPath = new PathString("signin-oidc");
+         * SignedOutCallbackPath: default = host:port/signout-callback-oidc.
+         * Must watch with the post logout redirect URI at IDP client config if
+         * you want to automatically return to the application after logging out of Identity Server
+         * To change, set SignedOutCallbackPath
+         * eg: options.SignedOutCallbackPath = "";
          */
-		options.SaveTokens = true;
+
+        options.SaveTokens = true;
+        options.GetClaimsFromUserInfoEndpoint = true;
 	});
 
 var app = builder.Build();

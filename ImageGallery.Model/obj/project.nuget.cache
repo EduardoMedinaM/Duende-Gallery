@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OlLkPq6h4gLiAbpxtMjKBchXBM06r3HpS4/anplHRrvDF6XrUa6Ov5/e9ZtQzmHc0JpsSVYGiGet5l8qe1Trvg==",
+  "dgSpecHash": "Zobt6swSXqASexSsd4I7MSsUptBaX3aCBPI3KvQqC/n6a7E7NU1MyaLxcQ5F4PuvT1AoQZ9aPmV4whsbMhrnMw==",
   "success": true,
-  "projectFilePath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
+  "projectFilePath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

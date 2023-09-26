@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pGzoSH3MQsCQ3OIX15V8+98XVtZPc9mVG/5xrw2xzQysCTSyciyc3LOdPLxmbPZLLdiDXXjs+6v+VaOzaWCkTw==",
+  "dgSpecHash": "7qMlgujbw8WPlgp/8jnm1qtxPCEC9eBNVS01OUdUpoeVHEs0Y/QwFuA9k56jvXEb5YYs+r+zVYoSXOAOvMU+fA==",
   "success": true,
-  "projectFilePath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Client\\ImageGallery.Client.csproj",
+  "projectFilePath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Client\\ImageGallery.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.21\\microsoft.aspnetcore.authentication.openidconnect.6.0.21.nupkg.sha512",
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

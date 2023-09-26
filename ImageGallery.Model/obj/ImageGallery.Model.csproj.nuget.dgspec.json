@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {}
+    "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {}
   },
   "projects": {
-    "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {
+    "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
+        "projectUniqueName": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
         "projectName": "ImageGallery.Model",
-        "projectPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
+        "projectPath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
         "packagesPath": "C:\\Users\\EduardoMedina\\.nuget\\packages\\",
-        "outputPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\obj\\",
+        "outputPath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EduardoMedina\\AppData\\Roaming\\NuGet\\NuGet.Config",

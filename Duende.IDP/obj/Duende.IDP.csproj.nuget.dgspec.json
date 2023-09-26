@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj": {}
+    "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj": {}
   },
   "projects": {
-    "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj": {
+    "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
+        "projectUniqueName": "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
         "projectName": "Duende.IDP",
-        "projectPath": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
+        "projectPath": "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
         "packagesPath": "C:\\Users\\EduardoMedina\\.nuget\\packages\\",
-        "outputPath": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\obj\\",
+        "outputPath": "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EduardoMedina\\AppData\\Roaming\\NuGet\\NuGet.Config",

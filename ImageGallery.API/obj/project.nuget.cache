@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WG31cza7C6/QWFbw/jZEJ5aXNUlDmMw5qGAzA5Qhp0zCRJOFs0nXVMidejHpmUWc6EB5mLT+f8zhCqGsR+SCUw==",
+  "dgSpecHash": "eA/U6BXXvanVQTfkiouIZFNV211IpWZ35sL4Ewk4Xjv6t/efjcbK2tsOuka6rc6ovWHRQAaoLHTnrwVvX9dRtg==",
   "success": true,
-  "projectFilePath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
+  "projectFilePath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

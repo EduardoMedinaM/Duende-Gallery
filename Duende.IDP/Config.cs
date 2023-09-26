@@ -1,4 +1,4 @@
-﻿using Duende.IdentityServer;
+﻿ using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
 
 namespace Duende.IDP;
@@ -37,6 +37,10 @@ public static class Config
                     RedirectUris = 
                     {
                         "https://localhost:7184/signin-oidc"
+                    },
+                    PostLogoutRedirectUris=
+                    {
+                        "https://localhost:7184/signout-callback-oidc"
                     },
                     AllowedScopes =
                     {

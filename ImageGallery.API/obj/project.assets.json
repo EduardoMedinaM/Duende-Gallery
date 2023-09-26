@@ -1415,11 +1415,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
+      "projectUniqueName": "C:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
       "projectName": "ImageGallery.API",
-      "projectPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
+      "projectPath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.API\\ImageGallery.API.csproj",
       "packagesPath": "C:\\Users\\EduardoMedina\\.nuget\\packages\\",
-      "outputPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.API\\obj\\",
+      "outputPath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EduardoMedina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1437,8 +1437,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {
-              "projectPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj"
+            "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj": {
+              "projectPath": "C:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj"
             }
           }
         }
