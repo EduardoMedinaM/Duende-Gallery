@@ -130,13 +130,16 @@ namespace ImageGallery.Client.Controllers
 			return RedirectToAction("Index");
 		}
 
-		public IActionResult AddImage()
+        // When multiple -> [Authorize(Roles = "PayingUser,AnotherBanga")]
+		[Authorize(Roles ="PayingUser")]
+        public IActionResult AddImage()
 		{
 			return View();
 		}
 
 		[HttpPost]
-		[ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "PayingUser")]
 		public async Task<IActionResult> AddImage(AddImageViewModel addImageViewModel)
 		{
 			if (!ModelState.IsValid)

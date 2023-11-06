@@ -35,6 +35,7 @@ public class TestUsers
                     {
                         // claims are related to scopes
                         new Claim(JwtClaimTypes.GivenName, "David"),
+                        new Claim("role", "FreeUser"),
                         new Claim(JwtClaimTypes.FamilyName, "Flagg"),
                     }
                 },
@@ -46,6 +47,7 @@ public class TestUsers
                     Claims =
                     {
                         new Claim(JwtClaimTypes.GivenName, "Emma"),
+                        new Claim("role", "PayingUser"),
                         new Claim(JwtClaimTypes.FamilyName, "Flagg")
                     }
                 }

@@ -13,7 +13,12 @@ public static class Config
             new IdentityResources.OpenId(),
             // if a user client requests profile as scope, 
             // Username and GivenName claims will be returned.
-            new IdentityResources.Profile()
+            new IdentityResources.Profile(),
+            // Role is not part of Open Id
+            new IdentityResource("roles",
+                "Your role(s)",
+                new []{"role"})
+
         };
 
     /*
@@ -46,7 +51,8 @@ public static class Config
                     {
                         // Provided by Duende
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "roles"
                     },
                     ClientSecrets =
                     {

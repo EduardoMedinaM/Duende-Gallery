@@ -39,7 +39,11 @@ builder.Services
      * it will be stored in an encrypted cookie. The cookie is then used
      * on subsequent requests to the web app to check
      */
-    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+    {
+        // defines the access denied page in the framework
+        options.AccessDeniedPath = "/Authentication/AccessDenied";
+    })
     /*
      * 
      * OpenIdConnect handler: Enables our application to support the OpenID Connect
@@ -64,8 +68,12 @@ builder.Services
          */
         options.Scope.Add("openid");
         options.Scope.Add("profile");
-		// needs to be defined here since it's part of the validation. Default: signin-oidc
-		options.CallbackPath = new PathString("/signin-oidc");
+
+        // custom role for RBAC
+        options.Scope.Add("roles");
+
+        // needs to be defined here since it's part of the validation. Default: signin-oidc
+        options.CallbackPath = new PathString("/signin-oidc");
         /* to later
          * var identityToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
          * 
@@ -88,6 +96,20 @@ builder.Services
         // Deletes a claim
         options.ClaimActions.DeleteClaim("sid");
         options.ClaimActions.DeleteClaim("idp");
+
+        /*
+         * If you create a new custom claim, you need to map it
+         * MapJsonKey -> for multiple roles
+         */
+        options.ClaimActions.MapJsonKey("role", "role");
+
+        // tells the framework where to find the role
+        options.TokenValidationParameters = new()
+        {
+            NameClaimType = "given_name",
+            RoleClaimType = "role"
+        };
+
     });
 
 var app = builder.Build();
