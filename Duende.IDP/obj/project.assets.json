@@ -1382,11 +1382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
+      "projectUniqueName": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\Duende.IDP\\Duende.IDP.csproj",
       "projectName": "Duende.IDP",
-      "projectPath": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
+      "projectPath": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\Duende.IDP\\Duende.IDP.csproj",
       "packagesPath": "C:\\Users\\EduardoMedina\\.nuget\\packages\\",
-      "outputPath": "c:\\localrepos\\Security\\duende-security\\Duende.IDP\\obj\\",
+      "outputPath": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\Duende.IDP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EduardoMedina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1397,7 +1397,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1444,7 +1443,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

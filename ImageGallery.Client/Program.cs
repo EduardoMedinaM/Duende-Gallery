@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Net.Http.Headers;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(configure => 
         configure.JsonSerializerOptions.PropertyNamingPolicy = null);
+
+/**
+ * To get claims like Claim type: sub - Claim value: b7539694-97e7-4dfe-84da-b4256e1ff5c7 (the original claim now is capted)
+ * and avoid mapping them through the middleware dictionary
+ * The default was used before for backwards compatibility with MS WS standards
+ */
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 // create an HttpClient used for accessing the API
 builder.Services.AddHttpClient("APIClient", client =>
@@ -62,7 +71,7 @@ builder.Services
          * 
          * options.CallbackPath = new PathString("signin-oidc");
          * SignedOutCallbackPath: default = host:port/signout-callback-oidc.
-         * Must watch with the post logout redirect URI at IDP client config if
+         * Must match with the post logout redirect URI at IDP client config if
          * you want to automatically return to the application after logging out of Identity Server
          * To change, set SignedOutCallbackPath
          * eg: options.SignedOutCallbackPath = "";
@@ -70,7 +79,16 @@ builder.Services
 
         options.SaveTokens = true;
         options.GetClaimsFromUserInfoEndpoint = true;
-	});
+
+        /*
+         * This helps to reduce the cookie size
+         */
+        // Removes filters
+        options.ClaimActions.Remove("aud");
+        // Deletes a claim
+        options.ClaimActions.DeleteClaim("sid");
+        options.ClaimActions.DeleteClaim("idp");
+    });
 
 var app = builder.Build();
 

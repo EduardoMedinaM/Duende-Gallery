@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BsE++6WwnmbxVFtQPUzmkmxACf9RxT9WlNtqAlv3V3tQt2KIIHHxHfYWmdtx6nRkgrk3qNHU8bOTTO2DKjGEIA==",
+  "dgSpecHash": "PzZ0E6ZYosM5WKatjpiiYRdCKrDH9Ym/iVwXqkIukwLMo8wN6uXgsCkcaPm5GWwHqV130UCrQJPuqANjQKcUXQ==",
   "success": true,
-  "projectFilePath": "C:\\localrepos\\Security\\duende-security\\Duende.IDP\\Duende.IDP.csproj",
+  "projectFilePath": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\Duende.IDP\\Duende.IDP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\duende.identityserver\\6.2.0\\duende.identityserver.6.2.0.nupkg.sha512",
     "C:\\Users\\EduardoMedina\\.nuget\\packages\\duende.identityserver.storage\\6.2.0\\duende.identityserver.storage.6.2.0.nupkg.sha512",

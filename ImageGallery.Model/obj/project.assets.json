@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
+      "projectUniqueName": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\ImageGallery.Model\\ImageGallery.Model.csproj",
       "projectName": "ImageGallery.Model",
-      "projectPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\ImageGallery.Model.csproj",
+      "projectPath": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\ImageGallery.Model\\ImageGallery.Model.csproj",
       "packagesPath": "C:\\Users\\EduardoMedina\\.nuget\\packages\\",
-      "outputPath": "c:\\localrepos\\Security\\duende-security\\ImageGallery.Model\\obj\\",
+      "outputPath": "C:\\Users\\EduardoMedina\\eduardorepos\\Duende-Gallery\\ImageGallery.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EduardoMedina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
