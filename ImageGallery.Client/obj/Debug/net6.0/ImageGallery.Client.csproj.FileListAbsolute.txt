@@ -80,3 +80,5 @@ C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug\net6.0\ImageGallery.Client.pdb
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug\net6.0\ImageGallery.Client.genruntimeconfig.cache
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug\net6.0\ref\ImageGallery.Client.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\IdentityModel.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\IdentityModel.AspNetCore.dll

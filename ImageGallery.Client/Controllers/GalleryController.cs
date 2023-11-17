@@ -37,13 +37,23 @@ namespace ImageGallery.Client.Controllers
 			var response = await httpClient.SendAsync(
 				request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
 
-			response.EnsureSuccessStatusCode();
-
-			using (var responseStream = await response.Content.ReadAsStreamAsync())
+			try
 			{
-				var images = await JsonSerializer.DeserializeAsync<List<Image>>(responseStream);
-				return View(new GalleryIndexViewModel(images ?? new List<Image>()));
+				response.EnsureSuccessStatusCode();
+
+				using (var responseStream = await response.Content.ReadAsStreamAsync())
+				{
+					var images = await JsonSerializer.DeserializeAsync<List<Image>>(responseStream);
+					return View(new GalleryIndexViewModel(images ?? new List<Image>()));
+				}
+
 			}
+			catch (Exception ex)
+			{
+
+				throw;
+			}
+
 		}
 
 		public async Task<IActionResult> EditImage(Guid id)
@@ -188,7 +198,11 @@ namespace ImageGallery.Client.Controllers
 		}
 		public async Task LogIdentityInformationAsync()
 		{
+			// gets the saved identity token
 			var identityToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
+
+			//gets the saved access token
+			var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
 
 			StringBuilder userClaimsStringBuilder = new();
 			foreach (var claim in User.Claims)
@@ -198,8 +212,11 @@ namespace ImageGallery.Client.Controllers
 					);
 
 			}
-			// log token & claims
+			// log identity token & claims
 			_logger.LogInformation($"Identity token & user claims: \n{identityToken} \n{userClaimsStringBuilder}");
-		}
-	}
+
+            _logger.LogInformation($"Access token: \n{accessToken}");
+
+        }
+    }
 }

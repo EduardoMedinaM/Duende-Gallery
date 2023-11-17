@@ -18,13 +18,23 @@ builder.Services.AddControllersWithViews()
  */
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
+
+/*
+ * Registered the required services for access token management
+ * coming from the identitymode.aspnetcore package
+ */
+builder.Services.AddAccessTokenManagement();
+
 // create an HttpClient used for accessing the API
-builder.Services.AddHttpClient("APIClient", client =>
-{
-    client.BaseAddress = new Uri(builder.Configuration["ImageGalleryAPIRoot"]);
-    client.DefaultRequestHeaders.Clear();
-    client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
-});
+builder.Services
+    .AddHttpClient("APIClient", client =>
+    {
+        client.BaseAddress = new Uri(builder.Configuration["ImageGalleryAPIRoot"]);
+        client.DefaultRequestHeaders.Clear();
+        client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
+    })
+    // Ensures the access token is passed in each http request
+    .AddUserAccessTokenHandler();
 
 // Configures the Authenthication middleware
 builder.Services
@@ -71,6 +81,8 @@ builder.Services
 
         // custom role for RBAC
         options.Scope.Add("roles");
+
+        options.Scope.Add("imagegalleryapi.fullaccess");
 
         // needs to be defined here since it's part of the validation. Default: signin-oidc
         options.CallbackPath = new PathString("/signin-oidc");
