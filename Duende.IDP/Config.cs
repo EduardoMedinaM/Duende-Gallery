@@ -17,7 +17,12 @@ public static class Config
             // Role is not part of Open Id
             new IdentityResource("roles",
                 "Your role(s)",
-                new []{"role"})
+                new []{"role"}),
+
+            // Country claim to use in the Policy
+            new IdentityResource("country",
+                "The country you're living in",
+                new List<string>(){"country"})
 
         };
 
@@ -64,7 +69,8 @@ public static class Config
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
                         "roles",
-                        "imagegalleryapi.fullaccess"
+                        "imagegalleryapi.fullaccess",
+                        "country"
                     },
                     ClientSecrets =
                     {

@@ -82,3 +82,11 @@ C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\obj\Debug\net6.0\ref\ImageGallery.Client.dll
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\IdentityModel.dll
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\IdentityModel.AspNetCore.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\ImageGallery.Authorization.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.Client\bin\Debug\net6.0\ImageGallery.Authorization.pdb

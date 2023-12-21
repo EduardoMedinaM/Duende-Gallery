@@ -141,16 +141,19 @@ namespace ImageGallery.Client.Controllers
 		}
 
         // When multiple -> [Authorize(Roles = "PayingUser,AnotherBanga")]
-		[Authorize(Roles ="PayingUser")]
-        public IActionResult AddImage()
-		{
-			return View();
-		}
+        // [Authorize(Roles ="PayingUser")]
+        [Authorize(Policy = "UserCanAddImage")]
 
-		[HttpPost]
+        public IActionResult AddImage()
+        {
+            return View();
+        }
+
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "PayingUser")]
-		public async Task<IActionResult> AddImage(AddImageViewModel addImageViewModel)
+        // [Authorize(Roles = "PayingUser")]
+        [Authorize(Policy = "UserCanAddImage")]
+        public async Task<IActionResult> AddImage(AddImageViewModel addImageViewModel)
 		{
 			if (!ModelState.IsValid)
 			{

@@ -1,3 +1,4 @@
+using ImageGallery.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -84,6 +85,9 @@ builder.Services
 
         options.Scope.Add("imagegalleryapi.fullaccess");
 
+        // custom role for Policy access
+        options.Scope.Add("country");
+
         // needs to be defined here since it's part of the validation. Default: signin-oidc
         options.CallbackPath = new PathString("/signin-oidc");
         /* to later
@@ -115,6 +119,9 @@ builder.Services
          */
         options.ClaimActions.MapJsonKey("role", "role");
 
+        options.ClaimActions.MapUniqueJsonKey("country", "country");
+
+
         // tells the framework where to find the role
         options.TokenValidationParameters = new()
         {
@@ -123,6 +130,12 @@ builder.Services
         };
 
     });
+
+// Configures the policy
+builder.Services.AddAuthorization(authorizationOptions =>
+{
+    authorizationOptions.AddPolicy("UserCanAddImage", AuthorizationPolicies.CanAddImage());
+});
 
 var app = builder.Build();
 
