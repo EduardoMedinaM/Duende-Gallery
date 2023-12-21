@@ -4,8 +4,6 @@
 
 using IdentityModel;
 using System.Security.Claims;
-using System.Text.Json;
-using Duende.IdentityServer;
 using Duende.IdentityServer.Test;
 
 namespace Duende.IDP;

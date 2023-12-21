@@ -116,3 +116,10 @@ C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\obj\Debug\ne
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\obj\Debug\net6.0\ImageGallery.API.pdb
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\obj\Debug\net6.0\ImageGallery.API.genruntimeconfig.cache
 C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\obj\Debug\net6.0\ref\ImageGallery.API.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\EduardoMedina\eduardorepos\Duende-Gallery\ImageGallery.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Duende.IDP",
+    "\\ImageGallery.API",
+    "\\ImageGallery.Client"
   ],
-  "SelectedNode": "\\ImageGallery.sln",
+  "SelectedNode": "\\ImageGallery.Client\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

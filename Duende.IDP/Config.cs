@@ -21,12 +21,23 @@ public static class Config
 
         };
 
+    public static IEnumerable<ApiResource> ApiResources =>
+        new ApiResource[]
+            { 
+                new ApiResource("imagegalleryapi", "Image Gallery API", new [] {"role"})
+                {
+                    Scopes = { "imagegalleryapi.fullaccess" }
+                }
+            };
+
     /*
      * A client app can get access to an API(s)
      */
     public static IEnumerable<ApiScope> ApiScopes =>
         new ApiScope[]
-            { };
+            {
+                new ApiScope("imagegalleryapi.fullaccess")
+            };
     /*
      * The client apps
      */
@@ -52,7 +63,8 @@ public static class Config
                         // Provided by Duende
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
-                        "roles"
+                        "roles",
+                        "imagegalleryapi.fullaccess"
                     },
                     ClientSecrets =
                     {
